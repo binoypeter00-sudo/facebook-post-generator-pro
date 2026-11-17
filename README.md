@@ -1,46 +1,86 @@
 # FACEBOOK POST GENERATOR PRO
 
-Malayalam-first Facebook writing and content-planning Skill for Pages, Groups, and Marketplace.
+**Version:** 1.0.0  
+**Status:** Stable initial release  
+**Primary language:** Malayalam  
+**Market focus:** India  
+**Platform:** Facebook
 
-## Package contents
-- SKILL.md — core instructions and workflow.
-- references/post-formats.md — reusable post formats.
-- references/hook-cta-library.md — opening lines and calls to action.
-- references/brand-voice.md — tone and localization guidance.
-- references/quality-and-safety.md — final review checklist.
-- examples/sample-output.md — sample Malayalam outputs.
+A standalone, Malayalam-first content-generation Skill for Facebook Pages, Groups, Marketplace, Reels, carousels, and content calendars.
 
-## Quick start
-Try requests such as:
-- "ഒരു പുതിയ Facebook post തയ്യാറാക്കൂ: വിഷയം [topic], ലക്ഷ്യം comments."
+## What this Skill does
+
+- Creates original Facebook posts and captions.
+- Writes factual product promotions and Marketplace listings.
+- Produces educational, engagement, announcement, and brand-story posts.
+- Generates Reel scripts and carousel slide copy.
+- Builds 7-day and 30-day content calendars.
+- Rewrites and repurposes supplied content for Facebook.
+- Adapts to Malayalam, English, and bilingual requirements.
+- Applies accuracy, trust, and editorial quality checks.
+
+## Package structure
+
+```text
+facebook-post-generator-pro/
+├── README.md
+├── SKILL.md
+├── CHANGELOG.md
+├── LICENSE
+├── references/
+│   ├── post-formats.md
+│   ├── hook-cta-library.md
+│   ├── brand-voice.md
+│   └── quality-and-safety.md
+└── examples/
+    └── sample-output.md
+```
+
+## Quick start prompts
+
+- "ഒരു Facebook post തയ്യാറാക്കൂ: വിഷയം [topic], ലക്ഷ്യം comments."
 - "ഈ product വിവരങ്ങൾ ഉപയോഗിച്ച് Malayalam promotional post എഴുതൂ: [details]."
-- "HomeNest India-യ്ക്ക് 7 ദിവസത്തെ Facebook content calendar ഉണ്ടാക്കൂ."
-- "ഈ draft മെച്ചപ്പെടുത്തി മൂന്ന് വ്യത്യസ്ത versions തരൂ: [draft]."
-- "ഈ ഉൽപ്പന്നത്തിനായി Facebook Marketplace listing തയ്യാറാക്കൂ: [verified details]."
+- "എന്റെ Facebook Page-ന് 7 ദിവസത്തെ content calendar ഉണ്ടാക്കൂ."
+- "ഈ draft മൂന്ന് വ്യത്യസ്ത ശൈലികളിൽ rewrite ചെയ്യൂ: [draft]."
+- "ഈ ഉൽപ്പന്നത്തിനായി Marketplace listing തയ്യാറാക്കൂ: [verified details]."
+- "ഈ വിഷയത്തിന് ഒരു Reel script-ും caption-ും തയ്യാറാക്കൂ: [topic]."
 
-## Installation
+## Installation — Claude
 
-### Claude-compatible Skills folder
-Copy the complete facebook-post-generator directory into the tool's supported Skills directory. Keep the references and examples folders beside SKILL.md.
+This repository follows the simple folder-based Skill layout: the entry instructions are in `SKILL.md`, with supporting references and examples beside it.
 
-### Manus Cue / other Skill managers
-Import or connect this folder/repository using the Skill manager's supported GitHub import flow. Select:
+1. Download the source from the [v1.0.0 release](https://github.com/binoypeter00-sudo/facebook-post-generator-pro/releases/tag/v1.0.0).
+2. Extract the `facebook-post-generator-pro` folder.
+3. Copy the Skill folder (the folder containing `SKILL.md`) into the Skills directory supported by your Claude environment.
+4. Enable or select the Skill in that environment and test with a Quick start prompt.
 
-skills/facebook-post-generator/
+For Claude Code, a project-level Skill can be placed under `.claude/skills/facebook-post-generator-pro/`; a personal Skill can be placed under `~/.claude/skills/facebook-post-generator-pro/`. Keep the `references/` and `examples/` folders with `SKILL.md`.
 
-If the manager asks for an entry file, choose SKILL.md.
+## Installation — Manus Cue / other Skill managers
 
-The repository connection does not itself publish Facebook posts. This is a content-generation Skill; publishing or scheduling requires a separately configured and permissioned workflow.
+1. Open your Manus Cue Skill manager.
+2. Choose its GitHub import/connect option (if available).
+3. Connect this repository: `binoypeter00-sudo/facebook-post-generator-pro`.
+4. Select the repository root or the folder containing `SKILL.md`, according to the importer's folder-selection requirements.
+5. Confirm that the reference files are included, then enable the Skill.
+6. Test with a Malayalam Facebook post brief.
 
-## Defaults
-- India-first audience context.
-- Malayalam-first writing.
-- Facebook Page, Group, and Marketplace formats.
-- INR and Asia/Kolkata timezone when applicable.
-- No invented prices, offer details, testimonials, or product claims.
+Manus Cue's exact UI/import flow can vary. This repository does not claim that Manus Cue has already been connected or that the Skill has been installed there.
 
-## Design reference
-This package is an original, Malayalam-first Facebook specialization. General social-content workflow concepts were reviewed from the public FradSer/dotclaude social skill as inspiration; no source text or code was copied into this package.
+## Important scope boundary
 
-## Version
-1.0.0
+This is a content-generation Skill. It does **not** automatically publish, schedule, moderate, or analyse Facebook Page activity. Those capabilities require separate integrations, permissions, and workflows.
+
+Always review final content before publishing. Confirm prices, stock, claims, dates, delivery terms, and contact details. Check current Meta policies and applicable local laws for regulated or restricted categories.
+
+## Version history
+
+See [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+## Repository
+
+https://github.com/binoypeter00-sudo/facebook-post-generator-pro
